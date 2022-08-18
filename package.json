@@ -1,0 +1,38 @@
+{
+  "name": "kimetsu_quiz",
+  "version": "1.0.0",
+  "description": "Quiz app about Kimetsu No Yaiba",
+  "main": "index.js",
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Yuichi617/kimetsu_quiz.git"
+  },
+  "keywords": [
+    "javascript",
+    "next",
+    "react"
+  ],
+  "author": "Yuichi Sugiyama",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Yuichi617/kimetsu_quiz/issues"
+  },
+  "homepage": "https://github.com/Yuichi617/kimetsu_quiz#readme",
+  "dependencies": {
+    "@emotion/react": "^11.10.0",
+    "@emotion/styled": "^11.10.0",
+    "@mui/icons-material": "^5.8.4",
+    "@reduxjs/toolkit": "^1.8.4",
+    "next": "^12.2.5",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "react-redux": "^8.0.2",
+    "redux-persist": "^6.0.0"
+  }
+}
