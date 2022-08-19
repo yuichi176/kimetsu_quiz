@@ -1,11 +1,28 @@
 import Link from 'next/link'
-import { useState } from 'react'
+import { useEffect, useState } from 'react'
+import { useDispatch, useSelector } from 'react-redux'
 import Hierarchie from './Hierarchie'
 import Rank from './Rank'
 import ResultModal from './ResultModal'
+import { update } from '../reducers/questionSlice'
 
 const Result = ({ questions, answers }) => {
   const [isModalOpen, setIsModalOpen] = useState(false)
+  const dispatch = useDispatch()
+  const openQuestions = useSelector((state) => state.question.openQuestions)
+
+  useEffect(() => {
+    var tmp = [...openQuestions]
+    for (let i = 0; i < result.length; ++i) {
+      tmp[questions[i].id - 1] = result[i]
+    }
+    dispatch(
+      update({
+        openQuestions: tmp
+      })
+      )
+  }, [])
+
   const result = answers.map((num, index) => {
     if (num === questions[index].answer) {
       return true
@@ -13,6 +30,7 @@ const Result = ({ questions, answers }) => {
       return false
     }
   })
+
   const sumCorrect = result.filter((t) => t == true).length
 
   const handleClickOpen = () => {

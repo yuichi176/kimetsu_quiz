@@ -5,7 +5,6 @@ import HighlightOffIcon from '@mui/icons-material/HighlightOff';
 const ResultModal = ({ questions, result, handleClickClose }) => {
   var ansList = []
   for (let i = 0; i < 10; i++) {
-    console.log(questions[i])
     if (result[i] == true) {
       ansList.push(
         <tr className='ans_set'>

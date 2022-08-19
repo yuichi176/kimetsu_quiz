@@ -10,7 +10,7 @@ const Main = () => {
   const [answers, setAnswers] = useState([])
 
   useEffect(() => {
-    setQuestions(arrayShuffle(questionSet).slice(0, 10))
+    setQuestions(arrayShuffle([...questionSet]).slice(0, 10))
   }, [])
 
   const handleAnswer = (num) => {
