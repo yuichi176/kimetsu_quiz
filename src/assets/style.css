@@ -295,7 +295,7 @@ body {
     color:#808080;
 }
 
-.modal {
+.answer-modal {
     position: fixed;
     top: 0;
     right: 0;
@@ -304,7 +304,7 @@ body {
     background-color: rgba(0, 0, 0, 0.6);
   }
   
-.modal-inner {
+.answer-modal-inner {
     position: absolute;
     top: 8%;
     right: 0;
@@ -321,7 +321,7 @@ body {
     animation-fill-mode: both;
 }
 
-.modal-content{
+.answer-modal-content{
     width: 90%;
     background-color: rgb(255, 255, 255);
     margin: 0 auto;
@@ -330,31 +330,31 @@ body {
     padding-bottom: 10px;
 }
 
-.modal-content .modal-close-btn{
+.answer-modal-content .answer-modal-close-btn{
     text-align:right;
 }
 
-.modal-content .modal-close-btn .fa-times-circle{
+.answer-modal-content .answer-modal-close-btn .fa-times-circle{
     font-size:20px;
     color:#d3d3d3;
     cursor: pointer;
 }
 
-.modal-content .fa-circle{
+.answer-modal-content .fa-circle{
     color:red;
 }
 
-.modal-content .fa-times{
+.answer-modal-content .fa-times{
     color: blue;
 }
 
-.modal-content table{
+.answer-modal-content table{
     width: 95%;
     margin: 0 auto;
     /*table-layout: fixed;*/
 }
 
-.modal-content table td{
+.answer-modal-content table td{
     padding: 10px;
 }
 /* ---------------------------- */
@@ -668,7 +668,7 @@ body {
         color:#808080;
     }
     
-    .modal {
+    .answer-modal {
         position: fixed;
         top: 0;
         right: 0;
@@ -677,13 +677,13 @@ body {
         background-color: rgba(0, 0, 0, 0.6);
       }
       
-    .modal-inner {
+    .answer-modal-inner {
         position: absolute;
-        top: 5%;
+        top: 3%;
         right: 0;
         left: 0;
         width: 90%;
-        height: auto;
+        height: 90%;
         min-width: 200px;
         padding-bottom: 10px;
         margin: auto;
@@ -696,7 +696,7 @@ body {
         animation-fill-mode: both;
     }
     
-    .modal-content{
+    .answer-modal-content{
         width: 90%;
         background-color: rgb(255, 255, 255);
         margin: 0 auto;
@@ -705,32 +705,32 @@ body {
         padding-bottom: 10px;
     }
     
-    .modal-content .modal-close-btn{
+    .answer-modal-content .answer-modal-close-btn{
         text-align:right;
     }
     
-    .modal-content .modal-close-btn .fa-times-circle{
+    .answer-modal-content .answer-modal-close-btn .fa-times-circle{
         font-size:20px;
         color:#d3d3d3;
         cursor: pointer;
     }
     
-    .modal-content .fa-circle{
+    .answer-modal-content .fa-circle{
         color:red;
     }
     
-    .modal-content .fa-times{
+    .answer-modal-content .fa-times{
         color: blue;
     }
     
-    .modal-content table{
+    .answer-modal-content table{
         width: 95%;
         margin: 0 auto;
         font-size: 9px;
         /*table-layout: fixed;*/
     }
     
-    .modal-content table td{
+    .answer-modal-content table td{
         padding: 10px;
     }
     /* ---------------------------- */
