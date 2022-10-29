@@ -33,10 +33,10 @@ const ResultModal = ({ questions, result, handleClickClose }) => {
   }
 
   return (
-    <div className='modal'>
-      <div className='modal-inner'>
-        <div className='modal-content'>
-          <div className='modal-close-btn'>
+    <div className='answer-modal'>
+      <div className='answer-modal-inner'>
+        <div className='answer-modal-content'>
+          <div className='answer-modal-close-btn'>
             <HighlightOffIcon sx={{cursor:'pointer'}} onClick={handleClickClose}/>
           </div>
           <table>
