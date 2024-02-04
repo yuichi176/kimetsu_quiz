@@ -7,7 +7,7 @@ const ResultModal = ({ questions, result, handleClickClose }) => {
   for (let i = 0; i < 10; i++) {
     if (result[i] == true) {
       ansList.push(
-        <tr className='ans_set'>
+        <tr className='ans_set' key={i}>
           <td>
             <PanoramaFishEyeIcon sx={{color:'red'}} pt={1}/>
           </td>
@@ -17,7 +17,7 @@ const ResultModal = ({ questions, result, handleClickClose }) => {
       )
     } else {
       ansList.push(
-        <tr className='ans_set'>
+        <tr className='ans_set' key={i}>
           <td>
             <Close sx={{color:'blue'}} />
           </td>
@@ -37,7 +37,7 @@ const ResultModal = ({ questions, result, handleClickClose }) => {
       <div className='answer-modal-inner'>
         <div className='answer-modal-content'>
           <div className='answer-modal-close-btn'>
-            <HighlightOffIcon sx={{cursor:'pointer'}} onClick={handleClickClose}/>
+            <Close onClick={handleClickClose} sx={{cursor:'pointer'}}/>
           </div>
           <table>
             <tr className='ans_set'>

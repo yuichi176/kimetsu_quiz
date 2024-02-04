@@ -36,31 +36,34 @@ body {
 /*メイン*/
 /*Home=========================*/
 .top-main-screen {
+    position: relative;
     background-image: url("./images/background.png");
     background-repeat: repeat;
     background-size: 60px 60px;
     background-color: white;
     width: 70%;
     height: 310px;
-    margin: 0 auto;
-    margin-top: 20px;
-    border: solid 1.5px #000000;
-    border-radius: 2px;
+    margin: 20px auto 0 auto;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    border-radius: 5px;
     padding: 50px 20px;
 }
 
 .top-main-screen-inner{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
     background-image: url("./images/home_back.png");
     background-size: cover;
-    background-color: white;
-    width: 90%;
     height: 310px;
-    margin: 0 auto;
-    border: solid 0.5px #808080;
+    width: 570px;
     border-radius: 5px;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
 }
 
 .top-main-screen .text1 {
+    font-family: serif;
     font-size: 18px;
     margin-top: 70px;
     font-weight: bold;
@@ -78,10 +81,12 @@ body {
     padding: 5px 5px; 
     cursor: pointer;
     margin-bottom: 5px;
+    transition: background-color .3s;
 }
 
 .top-main-screen .start_btn:hover{
     background-color: #808080;
+    transition: background-color .3s;
 }
 
 .open_crea_question_modal .trigger_text{
@@ -95,7 +100,7 @@ body {
 }
 
 .crea_question_modal{
-    position: fixed;
+    position: absolute;
     top: 0;
     right: 0;
     bottom: 0;
@@ -108,7 +113,7 @@ body {
     top: 3%;
     right: 0;
     left: 0;
-    width: 70%;
+    width: 80%;
     height: 90%;
     min-width: 450px;
     padding-bottom: 10px;
@@ -122,15 +127,15 @@ body {
 }
 
 .crea_question_modal-content{
-    width: 90%;
+    padding: 10px 5px;
     background-color: rgb(255, 255, 255);
     margin: 0 auto;
-    margin-top: 25px;
-    margin-bottom: 10px;
 }
 
 .crea_question_modal-content .modal-close-btn{
     text-align:right;
+    padding-right: 10px;
+    margin-bottom: 10px;
 }
 
 .crea_question_modal-content .modal-close-btn .fa-times-circle{
@@ -140,9 +145,7 @@ body {
 }
 
 .crea_question_modal-content table{
-    width: 95%;
     margin: 0 auto;
-    /*table-layout: fixed;*/
 }
 
 .crea_question_modal-content table td{
@@ -164,16 +167,16 @@ body {
 
 /*Main=========================*/
 .main-screen {
+    position: relative;
     background-image: url("./images/background.png");
     background-repeat: repeat;
     background-size: 60px 60px;
     background-color: white;
     width: 70%;
     height: 310px;
-    margin: 0 auto;
-    margin-top: 20px;
-    border: solid 1.5px #000000;
-    border-radius: 2px;
+    margin: 20px auto 0 auto;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    border-radius: 5px;
     padding: 50px 20px;
 }
 
@@ -232,6 +235,7 @@ body {
     border-radius: 5px;
     padding-top:5px;
     padding-bottom:5px;
+    transition: background-color .3s;
 }
 
 .main-screen .choice_box .options .option:hover{
@@ -240,6 +244,7 @@ body {
 
 /*Result=========================*/
 .result {
+    position: relative;
     background-color: white;
     width: 70%;
     margin: 0 auto;
@@ -280,10 +285,12 @@ body {
     border-radius: 5px;
     padding: 5px 5px; 
     cursor: pointer;
+    transition: background-color .3s;
 }
 
 .result .retry_btn:hover{
     background-color: #808080;
+    transition: background-color .3s;
 }
 
 .result .print_answer .print_answer_text{
@@ -296,7 +303,7 @@ body {
 }
 
 .answer-modal {
-    position: fixed;
+    position: absolute;
     top: 0;
     right: 0;
     bottom: 0;
@@ -306,32 +313,33 @@ body {
   
 .answer-modal-inner {
     position: absolute;
-    top: 8%;
-    right: 0;
-    left: 0;
-    width: 60%;
-    min-width: 450px;
+    top: 20px;
+    left: 50%;
+    transform: translateX(-52%);
+    height: 90%;
+    width: 600px;
     padding-bottom: 10px;
     margin: auto;
     background-color: rgb(255, 255, 255);
     /* box-shadow: 4px 4px #c0c0c0; */
-    border-radius: 9px;
+    border-radius: 10px;
     /* アニメーション */
     animation: fadeIn 0.3s linear;
     animation-fill-mode: both;
 }
 
 .answer-modal-content{
-    width: 90%;
+    width: 100%;
+    height: 100%;
     background-color: rgb(255, 255, 255);
-    margin: 0 auto;
-    margin-top: 10px;
-    margin-bottom: 10px;
-    padding-bottom: 10px;
+    padding: 10px;
+    border-radius: 10px;
+    overflow-y: scroll;
 }
 
 .answer-modal-content .answer-modal-close-btn{
     text-align:right;
+    padding-right: 5px;
 }
 
 .answer-modal-content .answer-modal-close-btn .fa-times-circle{
@@ -409,34 +417,36 @@ body {
     /*メイン*/
     /*Home=========================*/
     .top-main-screen {
+        position: relative;
         background-image: url("./images/background.png");
         background-repeat: repeat;
         background-size: 60px 60px;
         background-color: white;
         width: 80%;
         height: 220px;
-        margin: 0 auto;
-        margin-top: 20px;
-        border: solid 1.5px #000000;
-        border-radius: 2px;
+        margin: 20px auto 0 auto;
+        box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+        border-radius: 5px;
         padding: 40px 20px;
     }
     
     .top-main-screen-inner{
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
         background-image: url("./images/home_back_phone.png");
         background-size: cover;
-        background-color: white;
-        width: 100%;
         height: 220px;
-        margin: 0 auto;
-        border: solid 0.5px #808080;
+        width: 90%;
         border-radius: 5px;
+        box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
     }
     
     .top-main-screen .text1 {
         font-size: 12px;
-        margin-top: 58px;
-        margin-bottom: 13px;
+        margin-top: 50px;
+        margin-bottom: 20px;
     }
     
     .top-main-screen .start_btn {
@@ -518,7 +528,7 @@ body {
     }
     
     .crea_question_modal-content table td{
-        padding: 10px;
+        padding: 10px 5px;
     }
     
     .NoCol{
@@ -535,26 +545,30 @@ body {
     
     /*Main=========================*/
     .main-screen {
+        position: relative;
         background-image: url("./images/background.png");
         background-repeat: repeat;
         background-size: 60px 60px;
         background-color: white;
         width: 80%;
         height: 220px;
-        margin: 0 auto;
-        margin-top: 20px;
-        border: solid 1.5px #000000;
-        border-radius: 2px;
+        margin: 20px auto 0 auto;
+        box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+        border-radius: 5px;
         padding: 40px 20px;
     }
     
     .main-screen .question-screen{
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
         background-color: white;
-        width: 100%;
         height: 220px;
-        margin: 0 auto;
-        border: solid 1.5px white;
+        width: 90%;
         border-radius: 5px;
+        box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+        border: none;
     }
     
     .main-screen .question_no_box {
@@ -676,14 +690,12 @@ body {
         left: 0;
         background-color: rgba(0, 0, 0, 0.6);
       }
-      
+
     .answer-modal-inner {
-        position: absolute;
-        top: 3%;
-        right: 0;
-        left: 0;
-        width: 90%;
-        height: 90%;
+        position: fixed;
+        top: 10px;
+        width: 95%;
+        height: auto;
         min-width: 200px;
         padding-bottom: 10px;
         margin: auto;

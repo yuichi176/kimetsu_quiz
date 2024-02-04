@@ -9,7 +9,7 @@ const HomeModal = ({ handleClickClose }) => {
   for (let i = 0; i < 50; i++) {
     if (openQuestions[i] === true) {
       creaQuestionList.push(
-        <tr className='crea_question_set'>
+        <tr className='crea_question_set' key={i}>
           <td>No.{i + 1}</td>
           <td>{questionSet[i].q_sentence}</td>
           <td>{questionSet[i].options[questionSet[i].answer]}</td>
@@ -17,7 +17,7 @@ const HomeModal = ({ handleClickClose }) => {
       )
     } else {
       creaQuestionList.push(
-        <tr className='crea_question_set'>
+        <tr className='crea_question_set' key={i}>
           <td>No.{i + 1}</td>
           <td>???</td>
           <td>???</td>
