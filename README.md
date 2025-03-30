@@ -1,6 +1,9 @@
 # kimetsu_quiz
 Quiz app about Kimetsu no Yaiba
 
+## Requirements
+* Node >= 20
+
 ## Getting Started
 1. Clone the repository
 
